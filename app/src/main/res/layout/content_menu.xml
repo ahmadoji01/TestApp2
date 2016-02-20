@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_menu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="#1500ff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/menuicon2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:scaleType="fitCenter"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/btnEvent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:maxHeight="110dp"
+        android:maxWidth="125dp"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:src="@drawable/btnKonsultasi"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:maxHeight="110dp"
+        android:maxWidth="125dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_toLeftOf="@+id/imageView8"
+        android:layout_toStartOf="@+id/imageView8" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text="Konsultasi"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignLeft="@id/imageView7"
+        android:layout_alignRight="@id/imageView7"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="Event"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/editText"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_toLeftOf="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/btnProfile"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:maxHeight="110dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:text="Profile"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_below="@+id/imageView8"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_alignRight="@+id/imageView8" />
+
+</RelativeLayout>
