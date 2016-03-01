@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity
 
     EditText etUsername, etPassword;
     SessionManager session;
-    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

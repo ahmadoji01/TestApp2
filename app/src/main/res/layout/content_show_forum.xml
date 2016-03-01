@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_show_forum">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:fillViewport="false"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Thread Title"
+                android:id="@+id/tvThreadTitle"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp" />
+
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/scrollView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tvThreadTitle"
+                    android:layout_alignLeft="@+id/tvThreadTitle"
+                    android:layout_alignStart="@+id/tvThreadTitle"
+                    android:id="@+id/linearLayout"
+                    android:layout_above="@+id/relativeLayout">
+
+                    <Button
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="^"
+                        android:id="@+id/btnUpvote"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0"
+                        android:id="@+id/tvVote"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_above="@+id/btnDownvote"
+                        android:layout_alignRight="@+id/btnDownvote"
+                        android:layout_alignEnd="@+id/btnDownvote" />
+
+                    <Button
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="^"
+                        android:id="@+id/btnDownvote"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    android:id="@+id/tvThreadBody"
+                    android:textAlignment="textStart"
+                    android:layout_below="@+id/tvThreadTitle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/linearLayout"
+                    android:layout_toRightOf="@+id/linearLayout" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/scrollView2"
+                android:background="#ABABAB"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView9"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/avatar_profile"
+                    android:maxHeight="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_toStartOf="@id/relativeLayout"
+                    android:layout_toLeftOf="@id/relativeLayout"
+                    android:layout_alignStart="@id/relativeLayout" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:id="@+id/tvUsername"
+                        android:layout_alignTop="@+id/imageView9"
+                        android:layout_toRightOf="@+id/imageView9"
+                        android:layout_toEndOf="@+id/imageView9"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21-12-2016 06:00"
+                        android:id="@+id/tvDate"
+                        android:layout_alignBottom="@+id/imageView9"
+                        android:layout_toRightOf="@+id/imageView9"
+                        android:layout_toEndOf="@+id/imageView9"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Answer"
+                android:id="@+id/textView5"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linPost"></LinearLayout>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/lvPost" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

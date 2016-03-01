@@ -27,6 +27,7 @@ public class SessionManager
     private static final String KeyAge = "age";
     private static final String KeyEmail = "email";
     private static final String KeyUsername = "username";
+    private static final String KeyUserID = "userId";
 
     public SessionManager(Context context)
     {
@@ -35,7 +36,7 @@ public class SessionManager
         editor = pref.edit();
     }
 
-    public void createLoginSession(String name, String surname, String age, String email, String username)
+    public void createLoginSession(String name, String surname, String age, String email, String username, String userId)
     {
         editor.putBoolean(IsLogin, true);
         editor.putString(KeyName, name);
@@ -43,6 +44,7 @@ public class SessionManager
         editor.putString(KeyAge, age);
         editor.putString(KeyEmail, email);
         editor.putString(KeyUsername, username);
+        editor.putString(KeyUserID, userId);
         editor.commit();
     }
 
@@ -50,6 +52,8 @@ public class SessionManager
     {
         return pref.getString(KeyUsername, "");
     }
+
+    public String getUserID() { return pref.getString(KeyUserID, ""); }
 
     public HashMap<String, String> getUserDetails()
     {
@@ -59,6 +63,7 @@ public class SessionManager
         user.put(KeyAge, pref.getString(KeyAge, null));
         user.put(KeyEmail, pref.getString(KeyEmail, null));
         user.put(KeyUsername, pref.getString(KeyUsername, null));
+        user.put(KeyUserID, pref.getString(KeyUserID, null));
         return user;
     }
 

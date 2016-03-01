@@ -14,97 +14,125 @@
         android:layout_alignParentStart="true"
         android:src="#1500ff" />
 
-    <ImageView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView5"
-        android:src="@drawable/menuicon2"
+        android:id="@+id/scrollView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:scaleType="fitCenter"
-        android:maxWidth="100dp"
-        android:maxHeight="100dp"
-        android:adjustViewBounds="true"
-        android:layout_marginBottom="40dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentEnd="true">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView6"
-        android:src="@drawable/btnEvent"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
-        android:maxHeight="110dp"
-        android:maxWidth="125dp"
-        android:layout_alignTop="@+id/imageView7"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_centerHorizontal="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView7"
-        android:src="@drawable/btnKonsultasi"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
-        android:maxHeight="110dp"
-        android:maxWidth="125dp"
-        android:layout_below="@+id/imageView5"
-        android:layout_toLeftOf="@+id/imageView8"
-        android:layout_toStartOf="@+id/imageView8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:id="@+id/tvProfile"
+                android:layout_below="@+id/imageView8"
+                android:layout_alignLeft="@+id/imageView8"
+                android:layout_alignStart="@+id/imageView8"
+                android:layout_alignRight="@+id/imageView8"
+                android:layout_alignEnd="@+id/imageView8"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:text="Konsultasi"
-        android:textColor="#ffffff"
-        android:layout_below="@+id/imageView7"
-        android:layout_alignLeft="@id/imageView7"
-        android:layout_alignRight="@id/imageView7"
-        android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konsultasi"
+                android:id="@+id/tvKonsultasi"
+                android:layout_below="@+id/imageView6"
+                android:layout_alignLeft="@+id/imageView6"
+                android:layout_alignStart="@+id/imageView6"
+                android:layout_alignRight="@+id/imageView6"
+                android:layout_alignEnd="@+id/imageView6"
+                android:layout_marginTop="2dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:text="Event"
-        android:textColor="#ffffff"
-        android:textAlignment="center"
-        android:layout_alignTop="@+id/editText"
-        android:layout_toRightOf="@+id/imageView6"
-        android:layout_toEndOf="@+id/imageView5"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentRight="false"
-        android:layout_alignLeft="@+id/imageView6"
-        android:layout_alignRight="@+id/imageView6"
-        android:layout_toLeftOf="@+id/imageView6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event"
+                android:id="@+id/tvEvent"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:layout_below="@+id/imageView7"
+                android:layout_alignLeft="@+id/imageView7"
+                android:layout_alignStart="@+id/imageView7"
+                android:layout_alignRight="@+id/imageView7"
+                android:layout_alignEnd="@+id/imageView7"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView8"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/btnProfile"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:maxHeight="110dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:src="@drawable/btnprofile"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:maxHeight="110dp"
+                android:maxWidth="110dp"
+                android:onClick="onProfileClick"
+                android:layout_below="@+id/tvEvent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:text="Profile"
-        android:textColor="#ffffff"
-        android:textAlignment="center"
-        android:layout_below="@+id/imageView8"
-        android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText"
-        android:layout_alignRight="@+id/imageView8" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView7"
+                android:src="@drawable/btnevent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:maxHeight="110dp"
+                android:maxWidth="110dp"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginRight="25dp"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView6"
+                android:src="@drawable/btnkonsultasi"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:maxHeight="110dp"
+                android:maxWidth="110dp"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginLeft="25dp"
+                android:onClick="onKonsultasiClick" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView5"
+                android:src="@drawable/menuicon2"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp" />
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
